@@ -3,20 +3,27 @@ import Skills from "./Content_Component/Skills";
 import Education from "./Content_Component/Education";
 import Experience from "./Content_Component/Experience";
 import Extracurricular from "./Content_Component/Extracurricular";
-function Content() {
+function Content({
+  username,
+  interests,
+  skills,
+  education,
+  experience,
+  extracurriculars,
+}) {
   return (
-    <div class="stuff">
+    <div className="stuff">
       <br />
       <br />
       <h1>Resume</h1>
-      <h2>Emily</h2>
+      <h2>{username}</h2>
       <hr />
       <br />
-      <Interest />
-      <Skills />
-      <Education />
-      <Experience />
-      <Extracurricular />
+      <Interest interests={interests} />
+      <Skills skills={skills} />
+      <Education education={education} />
+      <Experience experience={experience} />
+      <Extracurricular extracurriculars={extracurriculars} />
     </div>
   );
 }

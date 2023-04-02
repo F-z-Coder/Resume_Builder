@@ -4,14 +4,15 @@ import RightBoder from "./RightBoder";
 import LeftBoder from "./LeftBoder";
 import Content from "./Content";
 import "../main.css";
-function App() {
+function App(props) {
+  console.log(props);
   return (
     <>
       <Header />
       <LeftBoder />
-      <Content />
+      <Content {...props} />
       <RightBoder />
-      <Footer />
+      <Footer username={props.username} />
     </>
   );
 }

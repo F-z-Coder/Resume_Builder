@@ -6,7 +6,6 @@
 div {
   border-radius: 5px;
 }
-
 #header {
   height: 40px;
   width: 100%;
@@ -52,6 +51,7 @@ div {
 p,
 li {
   font-family: "Cormorant Garamond";
+  padding-block: 0.2rem;
 }
 
 .head {
@@ -61,7 +61,7 @@ li {
 #name {
   font-family: Sacramento;
   float: right;
-  margin-top: 10px;
+  margin-block: 1rem;
   margin-right: 4%;
 }
 

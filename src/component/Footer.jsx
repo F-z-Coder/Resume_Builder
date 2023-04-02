@@ -1,7 +1,7 @@
-function Footer() {
+function Footer({ username }) {
   return (
     <div id="footer">
-      <h2 id="name">Faiz Shaikh</h2>
+      <h2 id="name">{username}</h2>
     </div>
   );
 }

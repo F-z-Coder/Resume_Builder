@@ -1,12 +1,11 @@
-function Extracurricular() {
+import Items from "./Items";
+
+function Extracurricular({ extracurriculars }) {
   return (
     <>
-      <p className="head">Extracurriculars</p>
-      <ul>
-        <li>Recycling Club</li>
-        <li>Gardening Club</li>
-        <li>Book Club</li>
-      </ul>
+      {extracurriculars.length > 0 && (
+        <Items itemname="Extracurricular" itemlist={extracurriculars} />
+      )}
     </>
   );
 }

@@ -1,11 +1,7 @@
-function Skills() {
+import Items from "./Items";
+function Skills({ skills }) {
   return (
-    <>
-      <p className="head">Skills</p>
-      <ul>
-        <li>Web Design with HTML & CSS</li>
-      </ul>
-    </>
+    <>{skills.length > 0 && <Items itemname="Skills" itemlist={skills} />}</>
   );
 }
 export default Skills;

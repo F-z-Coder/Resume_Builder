@@ -1,14 +1,10 @@
-function Interest() {
+import Items from "./Items";
+function Interest({ interests }) {
   return (
     <>
-      <p className="head">Interests</p>
-      <ul>
-        <li>Drawing</li>
-        <li>Photography</li>
-        <li>Design</li>
-        <li>Programming</li>
-        <li>Computer Science</li>
-      </ul>
+      {interests.length > 0 && (
+        <Items itemname="Interests" itemlist={interests} />
+      )}
     </>
   );
 }
